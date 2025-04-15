@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylsheet" href="styles.css">
+<style>
+a {
+  text-decoration: none;
+}
+a:link {
+  color: lavender;
+}
+a:hover {
+  color: green;
+}
+a:visited {
+  color: black;
+}
+a:focus {
+  color: teal;
+  outline: dashed red;
+}
+a:active {
+  color: magenta;
+}
+body {
+  background-color: pink;
+}
+.todo-list {
+  font-family: comic sans ms;
+  color: blue;
+}
+li {
+  margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+    <ul class="todo-list">
+        <li> 
+            <input type="checkbox" id="devStuff">
+             <label for="devStuff">Learn more front end dev stuff</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" target="_blank" href="https://www.freecodecamp.org/learn/full-stack-developer">Code learning site</a>
+                    </li>
+                </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="professional">
+            <label for="professional">Make a professional account</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" target="_blank" href="https://support.google.com/mail/answer/56256?hl=en">Google account creation</a>
+                    </li>
+                </ul> 
+        </li>
+        <li>
+            <input type="checkbox" id="marriage">
+            <label for="marriage">Get married</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" target="_blank" href="https://it.usembassy.gov/u-s-citizen-services/civil-union-italy/">Embassy info page</a>
+                    </li>
+                </ul>
+            </li>
+    
+        <li>
+            <input type="checkbox" id="tGirlVoice">
+            <label for="tGirlVoice">Watch pre voice appointment homework video</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" target="_blank" href="https://www.javinecoaching.com/pre-call-homework?referrer=nLehlvOy39a4">Afforementioned video</a>
+
+        </li>
+        </ul>
+        </li>
+        </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Did We Hang Out Good?</h1>
+    <p id="description">hi you are my friend and we went somewhere together was it good please answer</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input required id="name" type="text" placeholder="Mike Rotch">
+      <br>
+      <label id="email-label">Email
+      <input required id="email" type="email" placeholder="skinnyween@hotmail.com">
+      <br>
+      <label id="number-label">How would you rate the experience?</label>
+      <input id="number" type="number" min="-1" max="12" placeholder="8">
+      <br>
+      <label>Would you go again?</label>
+      <select id="dropdown">
+        <option value="yes-option">Yes</option>
+        <option value="no-option">No</option>
+      </select>
+      <br>
+      <label>Would you like to refer a friend? Y
+      <input type="radio" name="referFriend" value="positive">
+      <label>N</label>
+      <input type="radio" name="referFriend" value="negative">
+      <br>
+      <label>Please click on some boxes</label>
+      <input type="checkbox" value="bingus">
+      <input type="checkbox" value="ligma">
+      <input type="checkbox" value="transgenderMice">
+      <br>
+      <label>Ideas for next time, and comments about this time.</label>
+      <br>
+      <textarea cols="30" rows="4">
+
+      </textarea>
+      <button id="submit">Submit</button>
+      </form>
+  </body>
+</html>
