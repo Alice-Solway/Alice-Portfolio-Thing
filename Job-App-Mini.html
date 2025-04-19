@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+input:focus, textarea:focus {
+  border-color: teal;
+}
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+button:hover {
+  background-color: turquoise;
+}
+.radio-group input[type="radio"]:checked {
+  border-color: black;
+  background-color: brown;
+  box-shadow: 0 2px 4px;
+  label-color: blue;
+}
+input:nth-child(1) {
+  border-radius: 50px;
+}
+input[type="radio"]:checked + label {
+  color: blue;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application for Gay Company</h1>
+        <form>
+            <label for="name">Name of Applicant:</label>
+            <input required type="text" id="name">
+            <br>
+            <label for="email">Email:</label>
+            <input required type="email" id="email">
+            <br>
+            <label for="position">Desired Position:</label>
+            <select required id="position">
+                <option value="">--Please Select an Option--</option>
+                <option value="ligma">Ligma</option>
+                <option value="alan">The Red Guy From Smiling Friends</option>
+                <option value="wife">My Wife</option>
+                <option value="maintainance">Maintainance/Groundskeeper</option>
+                <option value="cook">Food Preparation</option>
+            </select>
+            <fieldset class="radio-group" name="availability">
+               
+                <input name="availability" id="fulltime" type="radio"> <label for="fulltime">FullTime</label>
+               
+                <input name="availability" id="parttime" type="radio"> <label for="parttime">PartTime</label>
+            </fieldset>
+            <label for="message">Other relevant information:</label>
+            <br>
+            <textarea id="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+</body>
+</html>
